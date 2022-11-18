@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Controles Númericos</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 255, 161);
+    }
+
+    main form{
+        text-align: justify;
+        padding: 25px;
+        border-radius: 10px;
+        background-color: rgba(212, 151, 36, 0.945);
+        width: 25vw;
+        height: 25vh;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+        
+
+    main h1{
+        margin-top: 20px;
+        text-align: center;
+        color: rgb(231, 113, 34);
+        text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.486);
+    }
+</style>
+<body>
+ 
+    <main>
+        <h1>Controles Numéricos</h1>
+        <form action="controles.php" autocomplete="off" method="get">
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" required maxlength="30" placeholder="seu nome aqui"><br>
+
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" required min="1" max="10" step="0.5" placeholder="1 a 10"> 
+        
+            </p>
+            <br>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
+        </form>
+    </main>
+    
+</body>
+</html>
